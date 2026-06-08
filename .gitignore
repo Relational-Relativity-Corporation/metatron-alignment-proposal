@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+validation/data/
+validation/download_sharechat.py
+*.egg-info/
+.env
