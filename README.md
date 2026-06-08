@@ -145,6 +145,14 @@ All results are fully reproducible from public data.
 
 ## Reproducing the ShareGPT validation
 
+```bash
+# Linux/Mac
+mkdir -p validation/data/sharegpt
+curl -L https://huggingface.co/datasets/RyokoAI/ShareGPT52K/resolve/main/sg_90k_part1.json \
+     -o validation/data/sharegpt/sg_90k_part1.json
+python validation/run_validation.py --sample 200
+```
+
 ```powershell
 # Download ShareGPT data
 $dataDir = '.\validation\data\sharegpt'
@@ -209,7 +217,7 @@ Robin Macomber — relationalrelativity.dev
 
 ## References
 
-- Macomber, R. (2026). Invariant Relational Evolution over Bounded Domains. arXiv:2601.22389
+- Macomber, R. & Stephenson, B. (2026). Convergent Discovery of Critical Phenomena Mathematics Across Disciplines. arXiv:2601.22389
 - ShareGPT52K: huggingface.co/datasets/RyokoAI/ShareGPT52K (CC BY-NC 4.0)
 
 ---
